@@ -135,7 +135,7 @@ if page == "📋 Stock Tickers":
             elif "Down" in val:
                 return "color: red; font-weight: bold"
             return ""
-        styled = df.style.applymap(colour_trend, subset=["Trend"])
+        styled = df.style.map(colour_trend, subset=["Trend"])
         st.dataframe(df, use_container_width=True, hide_index=True)
         st.markdown(" ")   # spacer between categories
 
