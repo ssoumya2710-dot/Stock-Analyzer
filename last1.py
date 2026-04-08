@@ -136,9 +136,7 @@ if page == "📋 Stock Tickers":
                 return "color: red; font-weight: bold"
             return ""
 
-        styled = df.style.applymap(colour_trend, subset=["trend"])
-        st.dataframe(styled, use_container_width=True, hide_index=True)
-        st.markdown(" ")   # spacer between categories
+       
 
 
 # ═══════════════════════════════════════════════════════════
